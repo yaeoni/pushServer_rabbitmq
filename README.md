@@ -21,6 +21,7 @@ brew services start rabbitmq
 > - config : /usr/local/etc/rabbitmq
 >
 > - log : /usr/local/var/log/rabbitmq
+> - 추가로 rabbitmqctl, admin등은 /usr/local/sbin 폴더에서 실행 가능
 
 > ### nxdomain (non-existing domain) 에러 처리
 >

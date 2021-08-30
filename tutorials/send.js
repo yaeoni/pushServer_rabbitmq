@@ -8,13 +8,17 @@ amqp.connect("amqp://127.0.0.1", function (err, connection) {
     if (err1) throw err1;
 
     var queue = "hello";
-    var msg = "hello world!";
+    var msg = {
+      test: "hello~",
+      yaewon: "cute",
+    };
 
     channel.assertQueue(queue, {
       durable: false,
     });
 
-    channel.sendToQueue(queue, Buffer.from(msg));
+    //JSON data 보내는 방법
+    channel.sendToQueue(queue, Buffer.from(JSON.stringify(msg)));
     console.log("Sent %s to queue", msg);
   });
 

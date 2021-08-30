@@ -17,7 +17,9 @@ amqp.connect("amqp://127.0.0.1", function (err, connection) {
     channel.consume(
       queue,
       function (msg) {
-        console.log("Receive! : %s", msg.content.toString());
+        var res = msg.content.toString();
+        res = JSON.parse(res);
+        console.log("Receive! : %s", res);
       },
       { noAck: true }
     );
