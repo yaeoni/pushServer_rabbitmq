@@ -1,0 +1,31 @@
+{
+  "name": "pushserver_rabbitmq",
+  "version": "1.0.0",
+  "description": "push server study & develop",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node src",
+    "build": "tsc && node dist",
+    "test": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yaeoni/pushServer_rabbitmq.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yaeoni/pushServer_rabbitmq/issues"
+  },
+  "homepage": "https://github.com/yaeoni/pushServer_rabbitmq#readme",
+  "devDependencies": {
+    "@types/amqplib": "^0.8.2",
+    "@types/node": "^16.7.6",
+    "nodemon": "^2.0.12",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.2"
+  },
+  "dependencies": {
+    "amqplib": "^0.8.0"
+  }
+}
