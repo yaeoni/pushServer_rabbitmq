@@ -1,3 +1,9 @@
+# 최종
+
+- rabbit MQ 튜토리얼을 통해 돌아가는 구조를 파악
+- 최종적으로 typescript를 이용한 producer function과 consumer(listener) 파일 생성
+- direct exchange(라우팅 패턴) 방식 활용
+
 ## 1. rabbitmq 설치
 
 ```
